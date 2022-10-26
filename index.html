@@ -20,89 +20,146 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/9d2f843523.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/styles/portfolio.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Homepage</title>
   </head>
   <body>
-    <header class="container header flex">
-      <div><img src="./img/SheCodes.png" alt="logo" /></div>
-      <nav class="header_nav">
-        <ul class="header_ul">
-          <li class="header_li">
-            <a class="header_link" href="#">Home</a>
-          </li>
-          <li class="header_li">
-            <a class="header_link" href="#">About</a>
-          </li>
-          <li class="header_li">
-            <a class="header_link" href="#">Gallery</a>
-          </li>
-          <li class="header_li">
-            <a class="header_link" href="#">Contact</a>
-          </li>
+    <header>
+      <nav class="d-flex justify-content-between">
+        <a href="/index.html">
+          <img src="/img/SheCodes.png" class="logo" alt="" />
+        </a>
+        <ul class="d-flex">
+          <a href="/index.html" title="Home" class="active"><li>Home</li></a>
+          <a href="/about.html" title="About"><li>About</li></a>
+          <a href="/gallery.html" title="Gallery"><li>Gallery</li></a>
+          <a href="/contact.html" title="Contact"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
-    <div class="caption">
+
+    <div class="container-fluid caption">
       <h3>SHELLEY WHITE</h3>
-      <h1>PHOTOGRAPHY</h1>
-      <p>
+      <h1 class="mt-3">PHOTOGRAPHY</h1>
+      <p class="mt-3 mx-auto">
         Nisl faucibus quis urna nibh ut amet. Diam suscipit pretium massa,
         sollicitudin in risus in. Sagittis.
       </p>
       <div><button class="button">GET STARTED</button></div>
     </div>
-     <br>
-    <div class="container gallery">
-      <div class="row one">
-        <div class="col-sm-4">
-          <img src="/img/row_1/Rectangle 107.png" alt="car" />
+    <br />
+    <div class="container gal">
+      <div class="photos">
+        <div class="row g-0">
+          <div class="col-sm-6 col-md-auto mx-auto">
+            <img class="img-fluid" src="/img/row_1/car.png" alt="car" />
+          </div>
+          <div class="col-sm-6 col-md-auto mx-auto">
+            <img class="img-fluid" src="/img/row_1/hall.png" alt="hall" />
+          </div>
+          <div class="col-md-auto mx-auto">
+            <img
+              src="/img/row_1/mountains.png"
+              alt="mountains"
+              class="d-none d-md-block"
+            />
+          </div>
         </div>
-        <div class="col-sm-4">
-          <img src="/img/row_1/Rectangle 108.png" alt="hall" />
+        <div class="row g-0">
+          <div class="col-md-auto mx-auto">
+            <img
+              src="/img/row_2/1_man.png"
+              alt="man"
+              class="d-none d-md-block"
+            />
+          </div>
+          <div class="col-sm-6 col-md-auto mx-auto">
+            <img src="/img/row_2/lake.png" alt="Gallery Photo" class="" />
+          </div>
+          <div class="col-sm-6 col-md-auto mx-auto">
+            <img
+              src="/img/row_2/stairs.png"
+              alt="Gallery Photo"
+              class="xl-photo"
+            />
+          </div>
         </div>
-        <div class="col-sm-4">
-          <img src="/img/row_1/Rectangle 109.png" alt="mountains" />
+        <div class="row g-0">
+          <div class="col-sm-6 col-md-auto mx-auto">
+            <img
+              src="/img/row_3/1_glasses.png"
+              alt="Gallery Photo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-6 col-md-auto mx-auto">
+            <img
+              src="/img/row_3/2_street.png"
+              alt="Gallery Photo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-auto mx-auto">
+            <img
+              src="/img/row_3/3_buildings.png"
+              alt="Gallery Photo"
+              class="d-none d-md-block"
+            />
+          </div>
+        </div>
+
+        <div class="row four g-0">
+          <div class="col-md-auto mx-auto">
+            <img
+              src="/img/row_4/1_lady.png"
+              alt="Gallery Photo"
+              class="d-none d-md-block"
+            />
+          </div>
+          <div class="col-md-auto mx-auto">
+            <img
+              src="/img/row_4/2_eiffel.png"
+              alt="Gallery Photo"
+              class="d-none d-md-block"
+            />
+          </div>
+          <div class="col-md-auto mx-auto">
+            <img
+              src="/img/row_4/3_strips.png"
+              alt="Gallery Photo"
+              class="d-none d-md-block"
+            />
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="/img/row_2/Rectangle 107.png" alt="man" />
-        </div>
-        <div class="col-sm-4">
-          <img src="/img/row_2/Rectangle 108.png" alt="lake" />
-        </div>
-        <div class="col-sm-4">
-          <img src="/img/row_2/Rectangle 109.png" alt="stairs" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="/img/row_3/Rectangle 107.png" alt="glasses" />
-        </div>
-        <div class="col-sm-4">
-          <img src="/img/row_3/Rectangle 108.png" alt="street" />
-        </div>
-        <div class="col-sm-4">
-          <img src="/img/row_3/Rectangle 109.png" alt="buildings" />
-        </div>
-      </div>
-      <div class="row four">
-        <div class="col-sm-4">
-          <img src="/img/row_4/Rectangle 107.png" alt="woman" />
-        </div>
-        <div class="col-sm-4">
-          <img src="/img/row_4/Rectangle 108.png" alt="eiffel" />
-        </div>
-        <div class="col-sm-4">
-          <img src="/img/row_4/Rectangle 109.png" alt="lines" />
-        </div>
-      </div>
-      <br>
     </div>
-    <footer>
-      
-    </footer>
+    <!-- start Footer -->
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col-lg-12 col-xl-4 footer-image d-none d-xl-block">
+          <img class="img-fluid" src="/img/SheCodes.png" alt="SheCodes-Logo" />
+        </div>
+        <div class="col-lg-12 col-xl-4 footer-social-icon">
+          <a href="www.facebook.com/SHELLEY-WHITE" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="www.instagram.com/SHELLEY-WHITE" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="www.linkedin.com/SHELLEY-WHITE" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="col-lg-12 col-xl-4 footer-right">
+          <span>©2021 SheCodes All rights reserved.</span>
+        </div> 
+      </div>
+    </div>
+    <!-- end Footer -->
   </body>
 </html>
